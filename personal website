@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zura - Freelance Translator & Writer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-semibold text-xl text-gray-800">Zura</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600 transition-colors">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-purple-600 transition-colors">Services</a>
+                    <a href="#contact" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-24 pb-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Zura</h1>
+                    <p class="text-2xl md:text-3xl mb-6 font-light">Freelance Translator | Writer | Designer</p>
+                    <p class="text-xl mb-8 opacity-90">Crafting words and designs that connect cultures and captivate audiences</p>
+                    <div class="flex space-x-4">
+                        <a href="#services" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">View Services</a>
+                        <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center p-8 floating">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c4a3111b-f45f-46ec-b2c6-0724a2959914.png" alt="Professional portrait of Zura, a male freelance translator and writer with glasses and friendly smile, working at a modern desk with laptop and books in a bright home office" class="w-full h-full rounded-full object-cover shadow-2xl" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-lg">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Hi, I'm Zura. A dedicated freelance writer and translator with a passion for delivering high-quality content that connects with audiences. I believe in clarity, creativity, and professionalism in every project I handle.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    With years of experience in translation and creative writing, I specialize in crafting content that not only translates words but also conveys the essence and emotion behind them. My approach combines linguistic precision with creative flair, ensuring your message resonates with your target audience while maintaining cultural authenticity.
+                </p>
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-4 bg-white rounded-lg shadow">
+                        <div class="text-2xl text-purple-600 mb-2"><i class="fas fa-globe"></i></div>
+                        <div class="font-semibold">Bilingual</div>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow">
+                        <div class="text-2xl text-purple-600 mb-2"><i class="fas fa-pen-fancy"></i></div>
+                        <div class="font-semibold">Creative</div>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow">
+                        <div class="text-2xl text-purple-600 mb-2"><i class="fas fa-clock"></i></div>
+                        <div class="font-semibold">Timely</div>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow">
+                        <div class="text-2xl text-purple-600 mb-2"><i class="fas fa-star"></i></div>
+                        <div class="font-semibold">Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">Services I Offer</h2>
+            <p class="text-xl text-gray-600 text-center mb-12">Professional services tailored to meet your specific needs</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-language text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Translation (English – Indonesian)</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professional translation services that maintain the original meaning while ensuring cultural relevance and natural flow in Indonesian.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Document Translation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Website Localization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Technical Translations</li>
+                    </ul>
+                    <div class="bg-purple-600 text-white px-4 py-2 rounded-lg text-center font-semibold">
+                        Starting at $25
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-nib text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Creative Writing & Blog Posts</h3>
+                    <p class="text-gray-600 mb-6">
+                        Engaging and SEO-friendly content that captures your brand's voice and connects with your audience.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Blog Articles</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Web Content</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Creative Copywriting</li>
+                    </ul>
+                    <div class="bg-purple-600 text-white px-4 py-2 rounded-lg text-center font-semibold">
+                        Starting at $30
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Graphic Design</h3>
+                    <p class="text-gray-600 mb-6">
+                        Visually stunning designs for posters, social media, and marketing materials that make your brand stand out.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Social Media Graphics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Posters & Flyers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Brand Identity</li>
+                    </ul>
+                    <div class="bg-purple-600 text-white px-4 py-2 rounded-lg text-center font-semibold">
+                        Starting at $40
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Let's Work Together</h2>
+            <div class="bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl p-8 text-white">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                        <p class="mb-6">Ready to start your project? Send me a message and I'll get back to you within 24 hours.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-3"></i>
+                                <span>zuraoneee@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone mr-3"></i>
+                                <span>+(62) 838 2326 1211</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white">
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                            <button type="submit" class="w-full bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-semibold">Zura</span>
+                    <p class="text-gray-400 mt-2">Freelance Translator | Writer | Designer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-fiverr text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Zura. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handling
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
